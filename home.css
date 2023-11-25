@@ -1,0 +1,119 @@
+body {
+    background-image: url(photos/background.png);
+    background-size: cover;
+}
+.navbar-nav {
+    margin-left: 40%;
+}
+.navbar-nav .nav-link {
+    color: white;
+}
+.navbar-nav .nav-link.active {
+    color:#ffffff;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.row {
+    margin-top: 10%;
+}
+.container h1 {
+    color:#ffffff;
+    font-size: 600%;
+    letter-spacing: -6px;
+    font-weight: bold;
+}
+.container h2 {
+    color: #ffffff;
+    font-size: 200%;
+    margin-top: 3%;
+}
+.container p {
+    color: #ffffff;
+    font-size: 130%;
+}
+.making_money h3 {
+    color: #2053B6;
+    font-weight: 650;
+    font-size: 400%;
+}
+.making_money {
+    padding-top: 15%;
+    text-align: center;
+}
+.img-wrapper{
+    max-width: 100%;
+    height: 65vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+@media screen and (min-width:576px) {
+    .carousel-inner{
+        display: flex;
+    }
+    .carousel-item{
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/4);
+    }
+    .img-wrapper{
+        max-width: 100%;
+        height: 23vw;
+    }
+}
+.carousel-inner{
+    padding: 1em;
+}
+.card{
+    border-radius: 0;
+    margin: 0 .5em;
+    box-shadow: 6px 6px 20px #0019ff;
+    height: 400px;
+    width: 250px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 6vh;
+    height: 6vh;
+    background-color: rgba(0, 26, 255, 0.847);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .5;
+}
+.carousel-control-prev:hover, 
+.carousel-control-next:hover{
+    opacity: .8;
+}
+.carousel {
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color:black;
+}
+
+ul, ol {
+    list-style: none;
+}
+.card-text p{
+    color: black;
+}
+.card-title {
+    color: black;
+}
+.card-body p{
+    color: black;
+    font-size: 100%;
+}
+a {
+    color:#ffffff;
+}
+.footer h3 {
+    color:#ffffff;
+}
+
+.container {
+    margin-top: 10%;
+}

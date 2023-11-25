@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href = "quiz.css">
+    <link rel="icon" type="image/x-icon" href="photos/aitu_moment.ico">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="platforms.html">Platforms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="quiz.html">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact me.html">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="quiz-container">
+      <h2>Student Money-Making Quiz</h2>
+
+      <div class="question" id="question1">
+          <p>1. What is a common way for students to make money online?</p>
+          <div class="options">
+              <label><input type="radio" name="q1" value="a">Part-time job</label>
+              <label class="correct-answer"><input type="radio" name="q1" value="b">Selling handmade crafts</label>
+              <label><input type="radio" name="q1" value="c">Investing in stocks</label>
+              <label><input type="radio" name="q1" value="d">Volunteering</label>
+          </div>
+      </div>
+
+      <div class="question" id="question2" style="display: none;">
+          <p>2. Which platform is commonly used for freelance work?</p>
+          <div class="options">
+              <label class="correct-answer"><input type="radio" name="q2" value="a">LinkedIn</label>
+              <label><input type="radio" name="q2" value="b">Facebook</label>
+              <label><input type="radio" name="q2" value="c">Uber</label>
+              <label><input type="radio" name="q2" value="d">Snapchat</label>
+          </div>
+      </div>
+
+      <div class="question" id="question3" style="display: none;">
+          <p>3. What is affiliate marketing?</p>
+          <div class="options">
+              <label><input type="radio" name="q3" value="a">Selling your own products</label>
+              <label class ="correct-answer"><input type="radio" name="q3" value="b">Promoting other people's products for a commission</label>
+              <label><input type="radio" name="q3" value="c">Working as an intern</label>
+              <label><input type="radio" name="q3" value="d">Participating in online surveys</label>
+          </div>
+      </div>
+      <div class="question" id="question4" style="display: none;">
+          <p>4. Which of the following is a popular gig economy platform?</p>
+          <div class="options">
+              <label class ="correct-answer"><input type="radio" name="q4" value="a">TaskRabbit</label>
+              <label><input type="radio" name="q4" value="b">NASA</label>
+              <label><input type="radio" name="q4" value="c">Library</label>
+              <label><input type="radio" name="q4" value="d">Gym</label>
+          </div>
+      </div>
+
+      <div class="question" id="question5" style="display: none;">
+          <p>5. What is a common way for students to save money on textbooks?</p>
+          <div class="options">
+              <label><input type="radio" name="q5" value="a">Buying new books from the campus bookstore</label>
+              <label class ="correct-answer"><input type="radio" name="q5" value="b">Renting textbooks</label>
+              <label><input type="radio" name="q5" value="c">Ignoring textbooks</label>
+              <label><input type="radio" name="q5" value="d">Stealing textbooks</label>
+          </div>
+      </div>
+
+      <div class="question" id="question6" style="display: none;">
+          <p>6. What is the term for earning money through online advertising on your blog or website?</p>
+          <div class="options">
+              <label><input type="radio" name="q6" value="a">Freelancing</label>
+              <label><input type="radio" name="q6" value="b">Affiliate marketing</label>
+              <label><input type="radio" name="q6" value="c">Sponsored content</label>
+              <label class ="correct-answer"><input type="radio" name="q6" value="d">Google AdSense</label>
+          </div>
+      </div>
+
+      <div class="question" id="question7" style="display: none;">
+          <p>7. What is the term for providing a service or skill to others for a fee?</p>
+          <div class="options">
+              <label><input type="radio" name="q7" value="a">Investing</label>
+              <label class ="correct-answer"><input type="radio" name="q7" value="b">Freelancing</label>
+              <label><input type="radio" name="q7" value="c">Donating</label>
+              <label><input type="radio" name="q7" value="d">Saving</label>
+          </div>
+      </div>
+
+      <div class="question" id="question8" style="display: none;">
+          <p>8. What is a common way for students to earn money during summer break?</p>
+          <div class="options">
+              <label><input type="radio" name="q8" value="a">Sleeping</label>
+              <label><input type="radio" name="q8" value="b">Traveling</label>
+              <label class ="correct-answer"><input type="radio" name="q8" value="c">Participating in internships</label>
+              <label><input type="radio" name="q8" value="d">Ignoring responsibilities</label>
+          </div>
+      </div>
+      <button onclick="nextQuestion()" id="nextBtn">Next</button>
+
+      <div class="result" id="result"></div>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    background-image: url(photos/newjeans.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #477bff;
+}
+@media only screen and (max-width: 800px) {
+    body {
+        background-image: url(photos/smartphone.jpg);
+    }
+}
+.navbar-nav {
+    margin-left: 40%;
+}
+.navbar-nav .nav-link {
+    color: white;
+}
+.navbar-nav .nav-link.active {
+    color:#ffffff;
+}
+.quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.correct-answer {
+    display: none; /* Hide correct answers by default */
+}
+
+.incorrect-answer {
+    display: none; /* Hide incorrect answers by default */
+    color: red;
+}
+
+#nextBtn {
+    display: block;
+    color: #ffffff;
+    background-color: #477bff;
+    border-color: #477bff;
+}
+
+#restartBtn {
+    color: #ffffff;
+    background-color: #477bff;
+    border-color: #477bff; 
+}
